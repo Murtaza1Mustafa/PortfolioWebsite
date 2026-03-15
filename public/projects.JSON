@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Scale the Depths",
+    "description": "Game Design lead & Coding assistance on a game.",
+    "story":"Scale the Depths is a fishing game focused on a loop of catching fish underwater, scaling those fish in a preparation scene and then feeding those fish to an assortment of customers. I joined the team at Glass Gecko Games at the conceptual phase of transforming this into a full fledged game and as such helped design and refine the core systems of the game over the course of the development cycle, ensuring that the information on these systems is readily accessible and understandable for the designated teams to make use of. As well as actively communicating with the team in weekly meetings to further ensure clarity and discuss any modifications as need. I also designed the levels within the game and ensuring the cohesiveness of the elements within them.  \n \nOne major part of working on the game design was balancing aspects of the game to ensure a good sense of progression, changing things and planning proper processes for those changes based on feedback from multiple sources. \n \n Alongside my game design responsibilities, I contributed to development by assisting with key coding tasks in Unity. My work primarily focused on implementing and refining core scripts that supported in-game systems, as well as developing interactive elements within the underwater environments. This experience strengthened my understanding of Unity’s scripting workflow and the relationship between design intent and technical implementation.",
+    "type": "Game Development",
+    "role": "Game Design Lead and Associate Coder",
+    "startDate": "2024-09",
+    "endDate": "2024-12",
+    "techStack": ["Unity", "C#", "Photon Networking"],
+    "gitlink": "https://github.com/username/scale-the-depth",
+    "dllink": "https://github.com/username/scale-the-depth",
+    "thumbimage": "/scalethedepthsthumb.jpg",
+    "image2": "/scalethedepths1.jpg",
+    "image3": "/scalethedepths2.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Portfolio Website",
+    "description": "Personal portfolio built with Next.js and Tailwind.",
+    "story":"This portfolio website was built using Next.js as an opportunity to deepen my understanding of the framework and explore its use cases beyond a standard React application. I wanted to gain hands-on experience with features such as file-based routing, server-side rendering, and the ability to handle both frontend and backend logic within a single project. \n \n The site serves as a central hub for my work, providing easily accessible project write-ups and downloadable builds where applicable, while also giving me space to experiment with design ideas, interactions, and technical features I find interesting. \n \n The application is built entirely with Next.js, utilizing it for both the frontend and backend logic, with Tailwind CSS used for styling and responsive layout. This project helped solidify my understanding of modern React-based workflows and how design, content, and technical structure come together in a cohesive web application.",
+    "type": "Web Development",
+    "role": "Solo Developer",
+    "startDate": "2024-09",
+    "endDate": "2024-12",
+    "techStack": ["Next.js", "React", "TailwindCSS"],
+    "gitlink": "https://github.com/username/portfolio",
+    "dllink": "https://github.com/username/scale-the-depth",
+    "thumbimage": "/next.svg",
+    "image2": "/next.svg",
+    "image3": "/next.svg"
+  },
+  {
+    "id": 3,
+    "title": "University Schedule Builder Redesign",
+    "description": "Schedule builder redesign",
+    "story":"Scale the depths is a project I have been working on, with the team at glass gecko games for over a year now. My role on the project is the lead game designer, ensuring the game systems are created in line with the philosophy of the game as well as those systems cohesively workin together to form the  whole.",
+    "type": "Web Development",
+    "role": "Solo Developer",
+    "startDate": "2024-09",
+    "endDate": "2024-12",
+    "techStack": ["Next.js", "React", "TailwindCSS"],
+    "gitlink": "https://github.com/username/portfolio",
+    "dllink": "https://github.com/username/scale-the-depth",
+    "thumbimage": "/next.svg",
+    "image2": "/next.svg",
+    "image3": "/next.svg"
+  }
+]
