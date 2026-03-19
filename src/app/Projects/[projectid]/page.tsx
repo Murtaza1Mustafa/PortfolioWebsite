@@ -18,7 +18,7 @@ export default function ProjectDetails({ params }: ProjectPageProps) {
   console.log('Project id numberfied:', projectId);
 
   // Read JSON from public/projects.json
-  const filePath = path.join(process.cwd(), 'public/projects.json');
+  const filePath = path.join(process.cwd(), 'public/projects.JSON');
   console.log('Reading JSON file from:', filePath);
 
   const jsonData = fs.readFileSync(filePath, 'utf-8');
