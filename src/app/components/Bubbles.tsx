@@ -5,7 +5,7 @@ const Bubbles = () => {
 
   return (
     <div
-      className="absolute bottom rounded-full bg-gradient-to-br from-[#48cae4] to-[#90e0ef] opacity-75 blur-[1px] animate-bubble"
+      className='absolute bottom rounded-full bg-gradient-to-br from-[#48cae4] to-[#90e0ef] opacity-75 blur-[1px] animate-bubble'
       style={{
         width: size,
         height: size,

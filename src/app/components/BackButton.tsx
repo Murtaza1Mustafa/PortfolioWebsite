@@ -1,9 +1,9 @@
-"use client";
-import Link from "next/link";
+'use client';
+import Link from 'next/link';
 
 const BackButton = () => {
   const BackToProjects = () => {
-    <Link href="/Projects">Projects</Link>;
+    <Link href='/Projects'>Projects</Link>;
   };
 
   <div>
