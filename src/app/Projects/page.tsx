@@ -31,7 +31,7 @@ export default function Projects() {
   const [selectedType, setSelectedType] = useState('');
 
   useEffect(() => {
-    fetch('/projects.json')
+    fetch('/projects.JSON')
       .then((res) => res.json())
       .then((data: Project[]) => setProjects(data))
       .catch((err) => console.error(err));

@@ -27,7 +27,7 @@ export default function HeroSection() {
         {/* Profile Image */}
         <div className='w-40 h-40 relative mb-6'>
           <Image
-            src='/photo.jpg'
+            src='/Photo.jpg'
             alt='Murtaza Mustafa'
             fill
             className='rounded-full object-cover shadow-lg border-4 border-[#00b4d8]'

@@ -49,11 +49,11 @@
     "type": "Web Development",
     "role": "Solo Developer",
     "startDate": "2024-09",
-    "endDate": "2024-12",
+    "endDate": "2025-03",
     "techStack": ["Next.js", "React", "TailwindCSS", "Typescript"],
     "gitlink": "https://github.com/Murtaza1Mustafa/PortfolioWebsite",
     "dllink": null,
-    "thumbimage": "/next.svg",
+    "thumbimage": "/Portfoliothumb.png",
 "content": [
   {
     "type": "paragraph",
