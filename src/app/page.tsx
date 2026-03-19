@@ -51,7 +51,7 @@ export default function HeroSection() {
           </Link>
 
           <Link
-            href='https://linkedin.com/in/yourprofile'
+            href='https://www.linkedin.com/in/murtazam1/'
             target='_blank'
             className='px-4 py-2 rounded-full bg-[#00b4d8] text-white hover:bg-[#0077b6] transition'
           >
@@ -67,7 +67,7 @@ export default function HeroSection() {
           </Link>
 
           <Link
-            href='mailto:Murtaza1mustafa1@email.com'
+            href='mailto:Murtaza1mustafa1@gmail.com'
             className='px-4 py-2 rounded-full bg-[#00b4d8] text-white hover:bg-[#0077b6] transition'
           >
             Contact
