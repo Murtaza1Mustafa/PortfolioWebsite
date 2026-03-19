@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Project } from "../page"; // adjust path if needed
 import Header from "@/app/components/Header";
 import  Bubbles  from "@/app/components/Bubbles";
+import { FaDownload, FaGithub } from "react-icons/fa";
 import Link from "next/link";
 
 interface ProjectPageProps {
@@ -70,49 +71,55 @@ export default function ProjectDetails({ params }: ProjectPageProps) {
           {project.techStack.map((tech) => (
             <span
               key={tech}
-              className="bg-[#caf0f8] text-[#023e8a] px-3 py-1 rounded-full text-sm xl:text-md"
+              className="bg-[#caf0f8] text-[#023e8a] px-3 py-1 mx-0.5 rounded-full text-sm xl:text-md "
             >
               {tech}
             </span>
           ))}
         </div>
-
-        {/* Git link */}
-        <a
+       <span> {/* Git link */}
+       { project.gitlink != null && (         <a
           href={project.gitlink}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#0077b6] underline font-semibold hover:text-[#023e8a] transition-colors duration-300 block px-2 mt-2 md:px-6"
-        >
-          View Project
-        </a>
+          aria-label="GitHub repository"
+          className="p-2 inline-flex hover:scale-110 transition"
+          >
+            <FaGithub className="w-12 h-12" />
+          </a>
+          ) }
+
+        {/* DL link */}
+       { project.dllink != null && (         <a
+          href={project.dllink}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Download Lin"
+          className="p-2 inline-flex hover:scale-110 transition"
+          >
+            <FaDownload className="w-12 h-12" />
+          </a>
+          ) } </span>
+
 
         <hr className="border-t border-gray-300 shadow-lg my-6 w-full" />
+        {project.content.map((block, index) => {
+          if (block.type === "paragraph") {
+            return <p key={index} className="my-4 whitespace-pre-line mx-12 text-sm md:text-lg 2xl:text-2xl text-black leading-normal md:leading-relaxed mb-4 md:max-w-6xl">{block.text}</p>;
+          }
 
-        {/* First image */}
-        <div className="shadow-xl shadow-[#0077b6]/20 rounded-xl z-10 overflow-hidden">
+          if (block.type === "image") {
+            return         <div key={index} className="shadow-xl shadow-[#0077b6]/20 mb-2 rounded-xl z-10 overflow-hidden">
           <Image
-            src={project.image2}
+            src={block.src}
             alt={project.title}
             width={700}
             height={200}
           />
-        </div>
+        </div>;
+          }
+        })}
 
-        {/* Story */}
-        <p className="my-4 whitespace-pre-line mx-12 text-sm md:text-lg 2xl:text-2xl text-black leading-normal md:leading-relaxed mb-4 md:max-w-6xl">
-          {project.story}
-        </p>
-
-        {/* Second image */}
-        <div className="shadow-xl shadow-[#0077b6]/20 rounded-xl z-10 overflow-hidden mb-4 z-10">
-          <Image
-            src={project.image3}
-            alt={project.title}
-            width={700}
-            height={200}
-          />
-        </div>
 
       </div>
     </div>

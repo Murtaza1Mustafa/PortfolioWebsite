@@ -2,49 +2,262 @@
   {
     "id": 1,
     "title": "Scale the Depths",
-    "description": "Game Design lead & Coding assistance on a game.",
-    "story":"Scale the Depths is a fishing game focused on a loop of catching fish underwater, scaling those fish in a preparation scene and then feeding those fish to an assortment of customers. I joined the team at Glass Gecko Games at the conceptual phase of transforming this into a full fledged game and as such helped design and refine the core systems of the game over the course of the development cycle, ensuring that the information on these systems is readily accessible and understandable for the designated teams to make use of. As well as actively communicating with the team in weekly meetings to further ensure clarity and discuss any modifications as need. I also designed the levels within the game and ensuring the cohesiveness of the elements within them.  \n \nOne major part of working on the game design was balancing aspects of the game to ensure a good sense of progression, changing things and planning proper processes for those changes based on feedback from multiple sources. \n \n Alongside my game design responsibilities, I contributed to development by assisting with key coding tasks in Unity. My work primarily focused on implementing and refining core scripts that supported in-game systems, as well as developing interactive elements within the underwater environments. This experience strengthened my understanding of Unity’s scripting workflow and the relationship between design intent and technical implementation.",
+    "description": "Lead the game and system design in a fishing game",
+     "Team_size": 8,
+    "status":"Ongoing",
     "type": "Game Development",
     "role": "Game Design Lead and Associate Coder",
     "startDate": "2024-09",
-    "endDate": "2024-12",
-    "techStack": ["Unity", "C#", "Photon Networking"],
-    "gitlink": "https://github.com/username/scale-the-depth",
-    "dllink": "https://github.com/username/scale-the-depth",
+    "endDate": null,
+    "techStack": ["Unity", "C#", "Game Design", "Agile Development"],
+    "gitlink": null,
+    "dllink": "https://store.steampowered.com/app/3198890/Scale_the_Depths/",
     "thumbimage": "/scalethedepthsthumb.jpg",
-    "image2": "/scalethedepths1.jpg",
-    "image3": "/scalethedepths2.jpg"
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Scale the Depths is a fishing game focused on catching fish underwater, preparing them, and delivering them to customers. I joined Glass Gecko Games during the conceptual phase of transforming the idea into a full-fledged game. Over the course of development, I helped design and refine the core systems, ensuring that information about these systems was accessible and usable for the rest of the team. I also actively communicated with the team in weekly meetings to discuss changes, clarify design intent, and coordinate updates across departments."
+      },
+      {
+        "type": "image",
+        "src": "/scalethedepths1.jpg"
+      },
+      {
+        "type": "paragraph",
+        "text": "A major part of my role was designing levels and balancing gameplay elements to ensure a smooth sense of progression. I closely monitored playtesting, providing elements for testing and incorporating feedback into iterative updates. Our team worked in an agile workflow, organizing work into bi-weekly tasks with story points and regular sprint reviews, which allowed us to adapt quickly to feedback and prioritize development effectively."
+      },
+
+      {
+        "type": "paragraph",
+        "text": "Alongside game design responsibilities, I contributed to development in Unity by implementing and refining core scripts to support in-game systems and developing interactive elements in underwater environments. This work strengthened my understanding of Unity scripting workflows and the relationship between design intent and technical implementation."
+      }
+      ,{
+        "type": "paragraph",
+        "text": "The design decisions and iterative updates I contributed to were reflected in the positive reception of the Steam demo, which showed noticeable improvements compared to the original game jam version. Feedback indicated that the progression and gameplay loops were clearer and more engaging, demonstrating the impact of structured design, testing, and collaboration on the overall player experience."
+      }, {
+        "type": "image",
+        "src": "/scalethedepths2.jpg"
+      }
+      ]
   },
   {
     "id": 2,
     "title": "Portfolio Website",
     "description": "Personal portfolio built with Next.js and Tailwind.",
-    "story":"This portfolio website was built using Next.js as an opportunity to deepen my understanding of the framework and explore its use cases beyond a standard React application. I wanted to gain hands-on experience with features such as file-based routing, server-side rendering, and the ability to handle both frontend and backend logic within a single project. \n \n The site serves as a central hub for my work, providing easily accessible project write-ups and downloadable builds where applicable, while also giving me space to experiment with design ideas, interactions, and technical features I find interesting. \n \n The application is built entirely with Next.js, utilizing it for both the frontend and backend logic, with Tailwind CSS used for styling and responsive layout. This project helped solidify my understanding of modern React-based workflows and how design, content, and technical structure come together in a cohesive web application.",
+    "Team_size": 1,
+    "status":"Completed",
     "type": "Web Development",
     "role": "Solo Developer",
     "startDate": "2024-09",
     "endDate": "2024-12",
-    "techStack": ["Next.js", "React", "TailwindCSS"],
-    "gitlink": "https://github.com/username/portfolio",
-    "dllink": "https://github.com/username/scale-the-depth",
+    "techStack": ["Next.js", "React", "TailwindCSS", "Typescript"],
+    "gitlink": "https://github.com/Murtaza1Mustafa/PortfolioWebsite",
+    "dllink": null,
     "thumbimage": "/next.svg",
-    "image2": "/next.svg",
-    "image3": "/next.svg"
+"content": [
+  {
+    "type": "paragraph",
+    "text": "This portfolio website was built using Next.js as an opportunity to deepen my understanding of the framework and explore its use cases beyond a standard React application. I wanted to gain hands-on experience with features such as file-based routing, server-side rendering, and the ability to handle both frontend and backend logic within a single project."
+  },
+  {
+    "type": "paragraph",
+    "text": "The site serves as a central hub for my work, providing easily accessible project write-ups and downloadable builds where applicable. It also gave me the opportunity to experiment with design ideas, interactive elements, and responsive layouts while maintaining a clean and consistent user experience."
+  },
+{
+        "type": "image",
+        "src": "/Portfolio1.png"
+},
+  {
+    "type": "paragraph",
+   "text": "From a technical perspective, the application is built entirely with Next.js, with Tailwind CSS used for styling and layout. I focused on creating reusable components, scalable data structures for project content, and a responsive design system that adapts cleanly across screen sizes."
+  },
+  {
+    "type": "paragraph",
+   "text": "One key improvement in this project was designing a flexible content system for project pages, allowing me to dynamically render structured sections such as text and images. This made it easier to build more detailed case studies while keeping the implementation clean and maintainable."
+  },
+  {
+    "type": "paragraph",
+    "text": "Overall, this project helped solidify my understanding of modern React-based workflows and how design, content, and technical structure come together to form a cohesive and user-friendly web application."
+  }
+]
+
   },
   {
     "id": 3,
-    "title": "University Schedule Builder Redesign",
-    "description": "Schedule builder redesign",
-    "story":"Scale the depths is a project I have been working on, with the team at glass gecko games for over a year now. My role on the project is the lead game designer, ensuring the game systems are created in line with the philosophy of the game as well as those systems cohesively workin together to form the  whole.",
+    "title": "Evently",
+    "description": "A mockup event hosting and participation site.",
+    "Team_size": 4,
+    "status":"Completed",
     "type": "Web Development",
-    "role": "Solo Developer",
+    "role": "Full Stack Developer",
     "startDate": "2024-09",
     "endDate": "2024-12",
-    "techStack": ["Next.js", "React", "TailwindCSS"],
-    "gitlink": "https://github.com/username/portfolio",
-    "dllink": "https://github.com/username/scale-the-depth",
-    "thumbimage": "/next.svg",
-    "image2": "/next.svg",
-    "image3": "/next.svg"
+    "techStack": ["Node.js", "React", "SQL", "Docker", "CSS", "Javascript", "Git"],
+    "gitlink": "https://github.com/Murtaza1Mustafa/Evently-Portfolio",
+    "dllink": null,
+    "thumbimage": "/EventlyThumb.png",
+        "content": [
+      {
+        "type": "paragraph",
+        "text": "Evently is a full-stack web application designed to facilitate event management, allowing organizers to post events, users to browse and attend them, and issues to be reported and handled through a structured system. The application was built using a React frontend, a Node.js backend, and a MySQL database, all containerized using Docker to ensure a consistent and reproducible development environment across the team."
+      },
+      {
+        "type": "paragraph",
+        "text": "My primary contributions focused on frontend development and feature implementation. I was responsible for designing and building several key pages, including the events listing page, event detail views, and user issue management interfaces. This involved implementing interactive UI components, integrating the site’s existing styling and theming, and ensuring a cohesive user experience across different parts of the application."
+      },
+      {
+        "type": "image",
+        "src": "/Evently1.png"
+
+      },
+            {
+        "type": "image",
+        "src": "/Evently2.png"
+
+      },
+      {
+        "type": "paragraph",
+        "text": "In addition to frontend work, I contributed to backend functionality by developing and integrating the necessary API calls for the features I worked on. I also assisted in designing the database schema, defining appropriate fields and data types, and writing SQL queries to support data retrieval and updates."
+      }
+      ,{
+        "type": "paragraph",
+        "text": "Throughout the project, I collaborated closely with the team using Git for version control, ensuring smooth integration of features and maintaining consistency across the codebase. This project strengthened my understanding of full-stack development, particularly in coordinating frontend interactions with backend systems and database design."
+      }
+      ]
+  },  
+  {
+    "id": 4,
+    "title": "Carayon Crash",
+    "description": "C++ Built Engine Backend and Car-based Paint covering game.",
+    "Team_size": 4,
+    "status":"Completed",
+    "type": "Game Development",
+    "role": "Game Development Lead",
+    "startDate": "2024-01",
+    "endDate": "2024-04",
+    "techStack": ["C++", "OpenGL", "PhysX", "Entity Component System", "Git"],
+    "gitlink": "https://github.com/J-essicaTran/CARayon-Clash",
+    "dllink": "https://www.mediafire.com/file/eitcnpm93auxwyn/Carayon_Clash.zip/file",
+    "thumbimage": "/CarayonClashthumb.png",
+        "content": [
+      {
+        "type": "paragraph",
+        "text": "This project involved developing a vehicle-based action game inspired by Splatoon, built on a custom C++ backend designed as a lightweight, engine-like framework. I architected and implemented the core systems that powered the game, effectively creating a mini engine that integrated PhysX for physics simulation and OpenGL for rendering."
+      },
+      {
+        "type": "image",
+        "src": "/CarayonClash1.png"
+
+      },
+      {
+        "type": "paragraph",
+        "text": "I developed several foundational systems, including an entity-component system to support modular gameplay development, a game systems manager to handle core systems such as game time and scoring, and the base vehicle physics setup. I also implemented enemy car AI, designing multiple behavior types to create varied and dynamic interactions during gameplay. The image below shows the car ai chasing after the player and trying to reach the powerup box before them."
+      },
+      {
+        "type": "image",
+        "src": "/CarayonClash2.png"
+      },
+      {
+        "type": "paragraph",
+        "text": "A major technical challenge involved debugging and resolving issues with PhysX collision handling, particularly related to incorrect collider sizing on vehicles. This required in-depth investigation of the PhysX pipeline and how collision components were structured within the engine. I ultimately identified the misconfigured element and restructured the system to ensure consistent and accurate collision behavior."
+      }
+      ,{
+        "type": "paragraph",
+        "text": "In addition to development, the project presented challenges in version control due to the complexity of the shared codebase. Frequent merge conflicts required careful coordination and resolution, significantly improving my ability to manage collaborative workflows and maintain stability in a multi-developer environment."
+      },
+      {
+        "type": "paragraph",
+        "text": "Beyond technical implementation, I led the overall game design direction and coordinated team meetings, bridging high-level design goals with low-level engine and gameplay systems. My contributions across AI, physics, and core architecture established a strong technical foundation that enabled efficient iteration and feature development."
+      }
+      ]
+  },  
+ {
+    "id": 5,
+    "title": "Well Mapping Software",
+    "description": "Well Mapping software visualizing geographical well mapping data",
+    "Team_size": 2,
+    "status":"Completed",
+    "type": "Web Development",
+    "role": "Full Stack Developer",
+    "startDate": "2023-09",
+    "endDate": "2023-12",
+    "techStack": ["React", "Node.js", "MySQL","Javascript",  "Material UI"],
+    "gitlink": "https://github.com/michael-svoboda/CPSC471_GeoMap",
+    "dllink": null,
+    "thumbimage": "/WellMap1.png",
+        "content": [
+      {
+        "type": "paragraph",
+        "text": "This project involved the development of a full-stack well monitoring and mapping application designed to efficiently manage, visualize, and interact with well data. The system was built around a MySQL database structured to support reliable storage and querying of monitoring data."
+      },
+      {
+        "type": "paragraph",
+        "text": "I contributed to both backend and frontend development, with a primary focus on designing and implementing database queries and supporting data flow between the server and client. I was involved in the planning process for structuring the database, helping define schemas and relationships to ensure efficient data organization and retrieval.Additionally, I designed and implemented the full login system, including both backend authentication and frontend login interfaces."
+      },
+      {
+        "type": "image",
+        "src": "/WellMap2.png"
+      },
+      {
+        "type": "paragraph",
+        "text": "On the backend, I worked with Node.js to handle database interactions and deliver data to the frontend. On the frontend, I developed key pages using React, including implementing data visualization features such as charts to represent well metrics in a clear and interactive way. I also utilized Material UI to create consistent and user-friendly interface components."
+      }
+      ,{
+        "type": "paragraph",
+        "text": "Additionally, I collaborated with a small team to establish diagrams and data models that supported effective prototyping and development. I conducted testing and debugging to ensure the system’s reliability and overall functionality."
+      }
+      ]
+  },
+  {
+          "id": 6,
+      "title": "Genki Girls Go",
+      "description": "Lead Game Systems Coder on gacha parody game for the GMTK 2025 Game Jam",
+      "Team_size": 4,
+      "status":"Completed",
+      "type": "Game Development",
+      "role": "Game Development Lead & Design",
+      "startDate": "2025-08",
+      "endDate": "2025-08",
+      "techStack": ["Unity", "C#", "Unity UI & Animation Tools"],
+      "gitlink": null,
+      "dllink": null,
+      "thumbimage": "/GGG1.png",
+      "content": [
+      {
+      "type": "paragraph",
+      "text": "Genki Girls Go is a fast-paced parody gacha simulation that humorously accelerates the traditional gacha loop, allowing players to experience the mechanics in an exaggerated, satirical way. Developed during a 3-day game jam, the project focused on creating a compelling gameplay loop with multiple mini-games, resource systems, and player progression."
+      },
+
+      {
+      "type": "paragraph",
+      "text": "I collaborated with the team to conceptualize and design the project, defining the core gameplay loop and overall structure. As lead coder, I developed the backbone systems of the game. The Game Manager oversees the overall game loop, handling time progression, day cycles, and player objectives. The Resource Manager efficiently tracks and updates player resources, while the Task Manager monitors mini-game completion and progress toward overall goals. I also created the full gacha system, designing dynamic probability mechanics that adjust chances of obtaining certain items based on previous rolls, simulating the progression and tension of real gacha games."
+      },
+                  {
+      "type": "image",
+      "src": "/GGG4.png"
+      },
+            {
+      "type": "image",
+      "src": "/GGG5.png"
+      },
+      {
+      "type": "paragraph",
+      "text": "Beyond the core systems, I created several mini-games, including one where players clean dirt off objects and another where enemies with randomized HP and animations are defeated by clicking. I also implemented smaller integrated sub-tasks and designed much of the UI for both the mini-games and the main game screen, ensuring a consistent and intuitive player experience."
+      }
+      ,
+            {
+      "type": "image",
+      "src": "/GGG3.png"
+      },
+            {
+      "type": "image",
+      "src": "/GGG2.png"
+      },
+      
+      {
+      "type": "paragraph",
+      "text": "This project highlights my ability to design and implement complex gameplay systems under tight time constraints, while demonstrating skills in UI development, resource management, and collaborative game design. It also reflects my capacity to blend creative ideas with technical execution, producing a playful yet functional prototype."
+      }
+      ]
   }
 ]
