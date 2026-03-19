@@ -13,9 +13,7 @@ export default function About() {
         ))}
 
         {/* ABOUT */}
-        <section className='w-full z-10 max-w-3xl xl:max-w-4xl 2xl:max-w-6xl xl:hover:scale-[1.01] transition-all duration-300 mx-auto bg-[#00b4d8] rounded-2xl shadow-lg shadow-[#0077b6]/40 p-6 md:p-8'>
-          <span className='ripple absolute inset-0 pointer-events-none'></span>
-
+        <section className='w-full z-10 max-w-3xl xl:max-w-4xl 2xl:max-w-6xl mx-auto bg-[#00b4d8] rounded-2xl shadow-lg shadow-[#0077b6]/40 p-6 md:p-8'>
           <h1
             style={{ textShadow: '2px 2px 0 #023e8a' }}
             className='text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white font-bold underline text-center py-4'
@@ -41,7 +39,7 @@ export default function About() {
         <div className='w-10 h-10 rounded-full bg-[#0077b6] shadow-md'></div>
 
         {/* PROFICIENCIES */}
-        <section className='w-full z-10 max-w-3xl xl:max-w-4xl 2xl:max-w-6xl hover:scale-[1.01] transition-all duration-300 mx-auto bg-[#00b4d8] rounded-2xl shadow-lg  shadow-[#0077b6]/40 p-6 md:p-8'>
+        <section className='w-full z-10 max-w-3xl xl:max-w-4xl 2xl:max-w-6xl mx-auto bg-[#00b4d8] rounded-2xl shadow-lg  shadow-[#0077b6]/40 p-6 md:p-8'>
           <h1
             style={{ textShadow: '2px 2px 0 #023e8a' }}
             className='text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white font-bold underline text-center py-4'
@@ -92,7 +90,7 @@ export default function About() {
         <div className='w-10 h-10 rounded-full bg-[#0077b6] shadow-md'></div>
 
         {/* INTERESTS */}
-        <section className='w-full z-10 max-w-3xl xl:max-w-4xl 2xl:max-w-6xl hover:scale-[1.01] transition-all duration-300 mx-auto bg-[#00b4d8] rounded-2xl shadow-lg  shadow-[#0077b6]/40 p-6 md:p-8'>
+        <section className='w-full z-10 max-w-3xl xl:max-w-4xl 2xl:max-w-6xl mx-auto bg-[#00b4d8] rounded-2xl shadow-lg  shadow-[#0077b6]/40 p-6 md:p-8'>
           <h1
             style={{ textShadow: '2px 2px 0 #023e8a' }}
             className='text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white font-bold underline text-center py-4'

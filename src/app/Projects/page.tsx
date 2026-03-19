@@ -67,47 +67,47 @@ export default function Projects() {
         <div className='flex flex-col gap-8 w-full md:max-w-4xl 4xl:max-w-6xl'>
           {filteredProjects.map((project) => (
             <Link key={project.id} href={`/Projects/${project.id}`} className='block'>
-              <div className='flex flex-col bg-[#00b4d8] rounded-2xl shadow-lg shadow-[#0077b6]/40 p-4 md:p-6 2xl:p-8 hover:scale-[1.05]  transition-all duration-10 cursor-pointer'>
+              <div className='flex flex-col bg-[#00b4d8] rounded-2xl shadow-lg shadow-[#0077b6]/40 p-4 md:p-6 2xl:p-8 hover:scale-[1.05] hover:bg-[#0096c7] transition-all duration-250 cursor-pointer'>
                 {/* Project Title */}
-                <h2 className='text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold underline text-center text-white py-4'>
+                <h2 className='text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold underline text-center text-white m-1 '>
                   {project.title}
                 </h2>
                 {/* Description */}
-                <p className='text-base md:text-md lg:text-lg xl:text-lg 2xl:text-xl  text-white drop-shadow-lg leading-relaxed px-2 md:px-6 text-right'>
+                <p className='text-base xl:text-lg 2xl:text-xl  text-white drop-shadow-lg leading-relaxed px-1 md:px-3 text-right'>
                   {project.startDate.toString()} {' - '}{' '}
                   {project.status == 'Completed' ? project.endDate.toString() : 'Present'}
                 </p>
 
                 {/* Description */}
-                <p className='text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-white drop-shadow-lg leading-relaxed mb-4 px-2 md:px-6'>
+                <p className='text-base xl:text-lg 2xl:text-xl text-white drop-shadow-lg leading-relaxed m-1 px-1 md:px-3'>
                   {project.description}
                 </p>
 
                 {/* Role */}
-                <p className='text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-[#ade8f4] drop-shadow-lg leading-relaxed mb-4 px-2 md:px-6'>
+                <p className='text-base xl:text-lg 2xl:text-xl text-[#ade8f4] drop-shadow-lg leading-relaxed m-1 px-1 md:px-3'>
                   Role: <span className='text-white'>{project.role}</span>
                 </p>
 
                 {/* Team Size*/}
-                <p className='text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-[#ade8f4] drop-shadow-lg leading-relaxed mb-4 px-2 md:px-6'>
+                <p className='text-base xl:text-lg 2xl:text-xl text-[#ade8f4] drop-shadow-lg leading-relaxed m-1 px-1 md:px-3'>
                   Team Size: <span className='text-white'>{project.Team_size}</span>
                 </p>
 
                 {/* Tag */}
-                <p className='text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-[#ade8f4] drop-shadow-lg leading-relaxed mb-4 px-2 md:px-6'>
+                <p className='text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-[#ade8f4] drop-shadow-lg leading-relaxed m-1 px-1 md:px-3'>
                   Type:{' '}
-                  <span className='bg-[#0077b6] text-white px-3 py-1 max-w-xl rounded-full text-md xl:text-lg 2xl:text-2xl'>
+                  <span className='bg-[#0077b6] text-white px-3 py-1 max-w-xl rounded-full text-base xl:text-base 2xl:text-lg'>
                     {project.type}
                   </span>
                 </p>
 
                 {/* Tech Stack */}
-                <p className='flex flex-wrap text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-[#ade8f4] w-full drop-shadow-lg leading-relaxed mb-4 px-2 md:px-6'>
+                <p className='flex flex-wrap text-base xl:text-lg 2xl:text-xl text-[#ade8f4] w-full drop-shadow-lg leading-relaxed m-1 px-1 md:px-3'>
                   Tech:
                   {project.techStack.map((tech) => (
                     <span
                       key={tech}
-                      className='bg-white  text-[#0077b6] px-3 py-1 m-0.5 rounded-full text-sm xl:text-base 2xl:text-xl'
+                      className='bg-white  text-[#0077b6] px-3 py-1 mx-0.5 rounded-full text-base xl:text-base 2xl:text-lg'
                     >
                       {tech}
                     </span>
@@ -128,7 +128,7 @@ export default function Projects() {
 
                 {/* Thumbnail */}
                 {project.thumbimage && (
-                  <div className='w-full max-w-3xl mx-auto overflow-hidden rounded-xl  shadow-lg mt-4'>
+                  <div className='w-full max-w-2xl mx-auto overflow-hidden rounded-xl  shadow-lg m-1'>
                     <Image
                       src={project.thumbimage}
                       alt={project.title}

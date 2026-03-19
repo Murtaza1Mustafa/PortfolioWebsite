@@ -75,7 +75,7 @@ export default function HeroSection() {
         </div>
 
         {/* Current Work */}
-        <div className='flex flex-col bg-[#00b4d8] rounded-2xl shadow-lg shadow-[#0077b6]/40 p-4 md:p-6 2xl:p-8 hover:scale-[1.01]  transition-all duration-100 cursor-pointer'>
+        <div className='flex flex-col bg-[#00b4d8] rounded-2xl shadow-lg shadow-[#0077b6]/40 p-4 md:p-6 2xl:p-8 cursor-pointer'>
           <h2 className='text-2xl font-semibold mb-2 text-white'>What I’m Currently Working On</h2>
 
           <Link
