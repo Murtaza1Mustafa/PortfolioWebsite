@@ -1,6 +1,4 @@
-
 const Bubbles = () => {
-
   const size = Math.random() * 20 + 10; // 10px - 40px
   const left = Math.random() * 100; // % across screen
   const delay = Math.random() * 10; // stagger animation
@@ -13,7 +11,7 @@ const Bubbles = () => {
         height: size,
         left: `${left}%`,
         bottom: 0,
-        animationDelay: `${delay}s`
+        animationDelay: `${delay}s`,
       }}
     />
   );

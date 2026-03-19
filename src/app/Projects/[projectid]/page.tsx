@@ -3,7 +3,7 @@ import path from "path";
 import Image from "next/image";
 import { Project } from "../page"; // adjust path if needed
 import Header from "@/app/components/Header";
-import  Bubbles  from "@/app/components/Bubbles";
+import Bubbles from "@/app/components/Bubbles";
 import { FaDownload, FaGithub } from "react-icons/fa";
 import Link from "next/link";
 
@@ -55,7 +55,6 @@ export default function ProjectDetails({ params }: ProjectPageProps) {
       </Link>
 
       <div className="flex flex-col items-center z-10 px-4">
-
         {/* Title */}
         <h1 className="text-xl md:text-4xl 2xl:text-6xl font-bold mb-4 text-center">
           {project.title}
@@ -77,50 +76,63 @@ export default function ProjectDetails({ params }: ProjectPageProps) {
             </span>
           ))}
         </div>
-       <span> {/* Git link */}
-       { project.gitlink != null && (         <a
-          href={project.gitlink}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="GitHub repository"
-          className="p-2 inline-flex hover:scale-110 transition"
-          >
-            <FaGithub className="w-12 h-12" />
-          </a>
-          ) }
-
-        {/* DL link */}
-       { project.dllink != null && (         <a
-          href={project.dllink}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Download Lin"
-          className="p-2 inline-flex hover:scale-110 transition"
-          >
-            <FaDownload className="w-12 h-12" />
-          </a>
-          ) } </span>
-
+        <span>
+          {" "}
+          {/* Git link */}
+          {project.gitlink != null && (
+            <a
+              href={project.gitlink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub repository"
+              className="p-2 inline-flex hover:scale-110 transition"
+            >
+              <FaGithub className="w-12 h-12" />
+            </a>
+          )}
+          {/* DL link */}
+          {project.dllink != null && (
+            <a
+              href={project.dllink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download Lin"
+              className="p-2 inline-flex hover:scale-110 transition"
+            >
+              <FaDownload className="w-12 h-12" />
+            </a>
+          )}{" "}
+        </span>
 
         <hr className="border-t border-gray-300 shadow-lg my-6 w-full" />
         {project.content.map((block, index) => {
           if (block.type === "paragraph") {
-            return <p key={index} className="my-4 whitespace-pre-line mx-12 text-sm md:text-lg 2xl:text-2xl text-black leading-normal md:leading-relaxed mb-4 md:max-w-6xl">{block.text}</p>;
+            return (
+              <p
+                key={index}
+                className="my-4 whitespace-pre-line mx-12 text-sm md:text-lg 2xl:text-2xl text-black leading-normal md:leading-relaxed mb-4 md:max-w-6xl"
+              >
+                {block.text}
+              </p>
+            );
           }
 
           if (block.type === "image") {
-            return         <div key={index} className="shadow-xl shadow-[#0077b6]/20 mb-2 rounded-xl z-10 overflow-hidden">
-          <Image
-            src={block.src}
-            alt={project.title}
-            width={700}
-            height={200}
-          />
-        </div>;
+            return (
+              <div
+                key={index}
+                className="shadow-xl shadow-[#0077b6]/20 mb-2 rounded-xl z-10 overflow-hidden"
+              >
+                <Image
+                  src={block.src}
+                  alt={project.title}
+                  width={700}
+                  height={200}
+                />
+              </div>
+            );
           }
         })}
-
-
       </div>
     </div>
   );

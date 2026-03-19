@@ -16,7 +16,6 @@ export default function HeroSection() {
       </div>
 
       <section className="w-full min-h-screen flex flex-col items-center justify-center px-6 text-center bg-[#f0fbff]">
-
         {/* Title */}
         <h1
           style={{ textShadow: "2px 2px 0 #90e0ef" }}
@@ -37,8 +36,10 @@ export default function HeroSection() {
 
         {/* Intro */}
         <p className="text-lg md:text-xl max-w-2xl mb-8 text-[#023e8a]">
-          I’m <span className="font-semibold text-[#0077b6]">Murtaza Mustafa</span>, a game and software developer
-          passionate about building interactive systems and creative experiences.
+          I’m{" "}
+          <span className="font-semibold text-[#0077b6]">Murtaza Mustafa</span>,
+          a game and software developer passionate about building interactive
+          systems and creative experiences.
         </p>
 
         {/* Links */}
@@ -89,10 +90,10 @@ export default function HeroSection() {
           </Link>
 
           <p className="text-white mt-2 max-w-md">
-            A fishing game that goes through the loop of fishing, cleaning the fish and feeding them to a variety of customers
+            A fishing game that goes through the loop of fishing, cleaning the
+            fish and feeding them to a variety of customers
           </p>
         </div>
-
       </section>
     </div>
   );
