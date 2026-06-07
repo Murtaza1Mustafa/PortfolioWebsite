@@ -21,7 +21,7 @@ export default function About() {
             A little bit about me
           </h1>
 
-          <p className='text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-white drop-shadow-lg leading-relaxed px-4 md:px-6'>
+          <p className='text-medium md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-white drop-shadow-lg leading-relaxed px-4 md:px-6'>
             Greetings! My name is Murtaza, and I&apos;m a graduate from the University of Calgary
             with a passion for creative endeavors that truly challenge my mind and adaptability. I
             first got into coding because I was fascinated by its puzzle-solving nature and the way
@@ -49,37 +49,37 @@ export default function About() {
 
           <ul className='space-y-3'>
             <li>
-              <span className='text-[#ade8f4] text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl underline font-semibold'>
+              <span className='text-[#0077b6] text-medium md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl underline font-semibold'>
                 Languages:
               </span>{' '}
-              <span className='text-white text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl'>
+              <span className='text-white text-medium md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl'>
                 C++, Typescript, C#, Java, Python, SQL
               </span>
             </li>
 
             <li>
-              <span className='text-[#ade8f4] text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl underline font-semibold'>
+              <span className='text-[#0077b6] text-medium md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl underline font-semibold'>
                 Tools:
               </span>{' '}
-              <span className='text-white text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl'>
+              <span className='text-white text-medium md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl'>
                 Git/GitHub, Docker, MySQL, MongoDB, REST APIs
               </span>
             </li>
 
             <li>
-              <span className='text-[#ade8f4] text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl underline font-semibold'>
+              <span className='text-[#0077b6] text-medium md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl underline font-semibold'>
                 Game Tech:
               </span>{' '}
-              <span className='text-white text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl'>
+              <span className='text-white text-medium md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl'>
                 Unity, Unreal Engine, Godot, OpenGL, PhysX
               </span>
             </li>
 
             <li>
-              <span className='text-[#ade8f4] text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl underline font-semibold'>
+              <span className='text-[#0077b6] text-medium md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl underline font-semibold'>
                 Concepts:
               </span>{' '}
-              <span className='text-white text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl'>
+              <span className='text-white text-medium md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl'>
                 OOP, Agile workflow, optimization, Testing & Debugging
               </span>
             </li>
@@ -98,11 +98,11 @@ export default function About() {
             My Interests
           </h1>
 
-          <h2 className='text-[#ade8f4] text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl underline font-semibold mt-4'>
+          <h2 className='text-[#0077b6] text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl underline font-semibold mt-4'>
             Gaming
           </h2>
 
-          <p className='text-white text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl leading-relaxed'>
+          <p className='text-white text-medium md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl leading-relaxed'>
             Since childhood, I&apos;ve held a deep love for games, especially the way their worlds
             and levels are designed. I was always fascinated by how they came together, often
             experimenting with creating my own in various software. Because of this, my natural
@@ -110,21 +110,21 @@ export default function About() {
             life.
           </p>
 
-          <h2 className='text-[#ade8f4] text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl underline font-semibold mt-4'>
+          <h2 className='text-[#0077b6] text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl underline font-semibold mt-4'>
             Hiking
           </h2>
 
-          <p className='text-white text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl leading-relaxed'>
+          <p className='text-white text-medium md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl leading-relaxed'>
             Hiking is something I started doing more recently, but the beautiful views and scenic
             walks make the experiences worthwhile and allow you to feel connected to nature. It
             helps that Alberta and the places neighboring it have countless trails to explore.
           </p>
 
-          <h2 className='text-[#ade8f4] text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl underline font-semibold mt-4'>
+          <h2 className='text-[#0077b6] text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl underline font-semibold mt-4'>
             Cooking
           </h2>
 
-          <p className='text-white text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl leading-relaxed'>
+          <p className='text-white font-normal text-medium md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl leading-relaxed'>
             Cooking took me a while to get into, but once I started doing it more it really
             brightened up my daily life. It gives me a creative outlet in what I make while also
             serving a practical purpose that makes everyday living smoother.

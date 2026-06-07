@@ -43,10 +43,10 @@ export default function Projects() {
   );
 
   return (
-    <div className='relative'>
+    <div className='relative bg-[#f0fbff]'>
       <Header />
 
-      <main className='relative w-full min-h-screen flex flex-col items-center gap-12 bg-[#f0fbff] p-6 md:p-10 z-10'>
+      <main className='relative w-full min-h-screen flex flex-col items-center gap-12  p-6 md:p-10 z-10'>
         {/* Filter dropdown */}
         <div className='max-w-xs w-full'>
           <select
@@ -66,56 +66,58 @@ export default function Projects() {
         {/* Projects grid */}
         <div className='flex flex-col gap-8 w-full md:max-w-4xl 4xl:max-w-6xl'>
           {filteredProjects.map((project) => (
-            <Link key={project.id} href={`/Projects/${project.id}`} className='block'>
-              <div className='flex flex-col bg-[#00b4d8] rounded-2xl shadow-lg shadow-[#0077b6]/40 p-4 md:p-6 2xl:p-8 hover:scale-[1.05] hover:bg-[#0096c7] transition-all duration-250 cursor-pointer'>
-                {/* Project Title */}
-                <h2 className='text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold underline text-center text-white m-1 '>
-                  {project.title}
-                </h2>
-                {/* Description */}
-                <p className='text-base xl:text-lg 2xl:text-xl  text-white drop-shadow-lg leading-relaxed px-1 md:px-3 text-right'>
-                  {project.startDate.toString()} {' - '}{' '}
-                  {project.status == 'Completed' ? project.endDate.toString() : 'Present'}
-                </p>
+            <div
+              key={project.id}
+              className='flex flex-col bg-[#00b4d8] rounded-2xl shadow-lg shadow-[#0077b6]/40 p-4 md:p-6 2xl:p-8'
+            >
+              {/* Project Title */}
+              <h2 className='text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold underline text-center text-white m-1 '>
+                {project.title}
+              </h2>
+              {/* Description */}
+              <p className='text-base xl:text-lg 2xl:text-xl  text-white drop-shadow-lg leading-relaxed px-1 md:px-3 text-right'>
+                {project.startDate.toString()} {' - '}{' '}
+                {project.status == 'Completed' ? project.endDate.toString() : 'Present'}
+              </p>
 
-                {/* Description */}
-                <p className='text-base xl:text-lg 2xl:text-xl text-white drop-shadow-lg leading-relaxed m-1 px-1 md:px-3'>
-                  {project.description}
-                </p>
+              {/* Description */}
+              <p className='text-base xl:text-lg 2xl:text-xl text-white drop-shadow-lg leading-relaxed m-1 px-1 md:px-3'>
+                {project.description}
+              </p>
 
-                {/* Role */}
-                <p className='text-base xl:text-lg 2xl:text-xl text-[#ade8f4] drop-shadow-lg leading-relaxed m-1 px-1 md:px-3'>
-                  Role: <span className='text-white'>{project.role}</span>
-                </p>
+              {/* Role */}
+              <p className='text-base xl:text-lg 2xl:text-xl text-[#ade8f4] drop-shadow-lg leading-relaxed m-1 px-1 md:px-3'>
+                Role: <span className='text-white'>{project.role}</span>
+              </p>
 
-                {/* Team Size*/}
-                <p className='text-base xl:text-lg 2xl:text-xl text-[#ade8f4] drop-shadow-lg leading-relaxed m-1 px-1 md:px-3'>
-                  Team Size: <span className='text-white'>{project.Team_size}</span>
-                </p>
+              {/* Team Size*/}
+              <p className='text-base xl:text-lg 2xl:text-xl text-[#ade8f4] drop-shadow-lg leading-relaxed m-1 px-1 md:px-3'>
+                Team Size: <span className='text-white'>{project.Team_size}</span>
+              </p>
 
-                {/* Tag */}
-                <p className='text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-[#ade8f4] drop-shadow-lg leading-relaxed m-1 px-1 md:px-3'>
-                  Type:{' '}
-                  <span className='bg-[#0077b6] text-white px-3 py-1 max-w-xl rounded-full text-base xl:text-base 2xl:text-lg'>
-                    {project.type}
+              {/* Tag */}
+              <p className='text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-[#ade8f4] drop-shadow-lg leading-relaxed m-1 px-1 md:px-3'>
+                Type:{' '}
+                <span className='bg-[#0077b6] text-white px-3 py-1 max-w-xl rounded-full text-base xl:text-base 2xl:text-lg'>
+                  {project.type}
+                </span>
+              </p>
+
+              {/* Tech Stack */}
+              <p className='flex flex-wrap text-base xl:text-lg 2xl:text-xl text-[#ade8f4] w-full drop-shadow-lg leading-relaxed m-1 px-1 md:px-3'>
+                Tech:
+                {project.techStack.map((tech) => (
+                  <span
+                    key={tech}
+                    className='bg-white  text-[#0077b6] px-3 py-1 mx-0.5 rounded-full text-base xl:text-base 2xl:text-lg'
+                  >
+                    {tech}
                   </span>
-                </p>
+                ))}
+              </p>
 
-                {/* Tech Stack */}
-                <p className='flex flex-wrap text-base xl:text-lg 2xl:text-xl text-[#ade8f4] w-full drop-shadow-lg leading-relaxed m-1 px-1 md:px-3'>
-                  Tech:
-                  {project.techStack.map((tech) => (
-                    <span
-                      key={tech}
-                      className='bg-white  text-[#0077b6] px-3 py-1 mx-0.5 rounded-full text-base xl:text-base 2xl:text-lg'
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </p>
-
-                {/* Git / Project Link */}
-                {/* {project.gitlink && (
+              {/* Git / Project Link */}
+              {/* {project.gitlink && (
                   <a
                     href={project.gitlink}
                     target="_blank"
@@ -126,23 +128,42 @@ export default function Projects() {
                   </a>
                 )} */}
 
-                {/* Thumbnail */}
-                {project.thumbimage && (
-                  <div className='w-full max-w-2xl mx-auto overflow-hidden rounded-xl  shadow-lg m-1'>
-                    <Image
-                      src={project.thumbimage}
-                      alt={project.title}
-                      width={800}
-                      height={400}
-                      className='w-full h-auto object-contain'
-                    />
-                  </div>
-                )}
+              {/* Thumbnail */}
+              {project.thumbimage && (
+                <div className='w-full max-w-2xl mx-auto overflow-hidden rounded-xl  shadow-lg m-1'>
+                  <Image
+                    src={project.thumbimage}
+                    alt={project.title}
+                    width={800}
+                    height={400}
+                    className='w-full h-auto object-contain'
+                  />
+                </div>
+              )}
+
+              <div className='mt-4 flex justify-center'>
+                <Link
+                  href={`/Projects/${project.id}`}
+                  className='inline-flex items-center px-5 py-2 font-semibold text-white bg-[#0077b6] rounded-full shadow-sm shadow-blue-950/25 hover:scale-[1.05] hover:bg-[#023e8a] transition'
+                >
+                  Learn More
+                </Link>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </main>
+      <svg
+        className='absolute bottom-0 left-0 mt-2 z-[0]'
+        xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 1440 320'
+      >
+        <path
+          fill='#0077b6'
+          fillOpacity='1'
+          d='M0,192L80,202.7C160,213,320,235,480,229.3C640,224,800,192,960,176C1120,160,1280,160,1360,160L1440,160L1440,320L0,320Z'
+        />
+      </svg>
     </div>
   );
 }

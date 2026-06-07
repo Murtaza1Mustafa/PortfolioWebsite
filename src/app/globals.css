@@ -62,3 +62,16 @@ section:hover .ripple::before {
   transform: scale(3);
   opacity: 0.8;
 }
+
+.text-shadow {
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.text-shadow-lg {
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}

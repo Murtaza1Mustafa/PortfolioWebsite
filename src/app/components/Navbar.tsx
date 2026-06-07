@@ -8,11 +8,11 @@ const NavLinks = () => {
   const pathname = usePathname();
 
   const baseClasses = 'px-6 2xl:px-16 py-4 text-black text-md 2xl:text-2xl rounded transition-all';
-  const hoverClasses = 'hover:bg-[#00b4d8] hover:shadow-lg hover:border-[#00b4d8]';
+  const hoverClasses = 'hover:bg-[#00b4d8] hover:shadow-sm hover:border-[#00b4d8]';
 
   const getClasses = (href: string) =>
     pathname === href
-      ? `${baseClasses} bg-[#00b4d8] shadow-lg text-white border-[#00b4d8]`
+      ? `${baseClasses} bg-[#00b4d8] shadow-sm text-white border-[#00b4d8]`
       : `${baseClasses} ${hoverClasses}`;
 
   // Wrap links in a div for flex direction
