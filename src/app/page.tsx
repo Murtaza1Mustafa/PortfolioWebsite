@@ -125,12 +125,9 @@ export default function HeroSection() {
             <div className='text-[10px] text-[#ade8f4] tracking-[0.3em] mb-6'>LINKS</div>
 
             <div className='flex flex-col gap-8 items-center'>
-              <Link
-                href='https://github.com/Murtaza1Mustafa'
-                className='group flex flex-col items-center gap-1 hover:'
-              >
-                <FaGithub className='w-6 h-6 text-white group-hover:text-[#ade8f4] transition-all duration-200' />
-                <span className='text-[10px] text-[#ade8f4]'>GitHub</span>
+              <Link href='/Resume.pdf' className='group flex flex-col items-center gap-1'>
+                <FaRegFilePdf className='w-6 h-6 text-white group-hover:text-[#ade8f4] transition-all duration-200' />
+                <span className='text-[10px] text-[#ade8f4]'>Resume</span>
               </Link>
 
               <Link
@@ -141,11 +138,6 @@ export default function HeroSection() {
                 <span className='text-[10px] text-[#ade8f4]'>LinkedIn</span>
               </Link>
 
-              <Link href='/Resume.pdf' className='group flex flex-col items-center gap-1'>
-                <FaRegFilePdf className='w-6 h-6 text-white group-hover:text-[#ade8f4] transition-all duration-200' />
-                <span className='text-[10px] text-[#ade8f4]'>Resume</span>
-              </Link>
-
               <Link
                 href='mailto:murtaza1mustafa1@gmail.com'
                 className='group flex flex-col items-center gap-1'
@@ -153,22 +145,30 @@ export default function HeroSection() {
                 <FaEnvelope className='w-6 h-6 text-white group-hover:text-[#ade8f4] transition-all duration-200' />
                 <span className='text-[10px] text-[#ade8f4]'>Contact</span>
               </Link>
+
+              <Link
+                href='https://github.com/Murtaza1Mustafa'
+                className='group flex flex-col items-center gap-1 hover:'
+              >
+                <FaGithub className='w-6 h-6 text-white group-hover:text-[#ade8f4] transition-all duration-200' />
+                <span className='text-[10px] text-[#ade8f4]'>GitHub</span>
+              </Link>
             </div>
           </div>
         </div>
 
         <div className='md:hidden fixed bottom-4 left-1/2 -translate-x-1/2 flex flex-row gap-6 bg-[#006494] px-4 py-3 rounded-2xl shadow-lg shadow-[#0077b6]/40 z-[10]'>
-          <Link href='https://github.com/Murtaza1Mustafa' className='text-white'>
-            <FaGithub />
+          <Link href='/Resume.pdf' className='text-white'>
+            <FaRegFilePdf />
           </Link>
           <Link href='https://www.linkedin.com/in/murtazam1/' className='text-white'>
             <FaLinkedin />
           </Link>
-          <Link href='/Resume.pdf' className='text-white'>
-            <FaRegFilePdf />
-          </Link>
           <Link href='mailto:murtaza1mustafa1@gmail.com' className='text-white'>
             <FaEnvelope />
+          </Link>
+          <Link href='https://github.com/Murtaza1Mustafa' className='text-white'>
+            <FaGithub />
           </Link>
         </div>
       </section>
