@@ -27,7 +27,7 @@ body {
 
 @keyframes bubble {
   0% {
-    bottom: -20;
+    bottom: 0;
     opacity: 0.4;
   }
   50% {
@@ -41,7 +41,7 @@ body {
 }
 
 .animate-bubble {
-  animation: bubble 20s linear infinite;
+  animation: bubble 18s linear infinite;
 }
 
 .ripple::before {

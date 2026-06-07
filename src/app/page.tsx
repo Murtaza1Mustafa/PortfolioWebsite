@@ -81,18 +81,24 @@ export default function HeroSection() {
                     id='slide-1'
                     src='/STD_Slider1.jpg'
                     alt='Scale the Depths image'
+                    width={1000}
+                    height={500}
                   />
                   <Image
                     className='w-full flex-none snap-start'
                     id='slide-2'
                     src='/STD_Slider2.jpg'
                     alt='Scale the Depths image'
+                    width={1000}
+                    height={500}
                   />
                   <Image
                     className='w-full flex-none snap-start'
                     id='slide-3'
                     src='/STD_Slider3.jpg'
                     alt='Scale the Depths image'
+                    width={1000}
+                    height={500}
                   />
                 </div>
                 <div className='absolute bottom-2 left-0 right-0 flex justify-center gap-2 z-10'>
