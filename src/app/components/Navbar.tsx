@@ -27,7 +27,6 @@ const NavLinks = () => {
       <Link className={getClasses('/Projects')} href='/Projects'>
         Projects
       </Link>
-      {/* <Link className={getClasses("/contact")} href="/contact">Contact me</Link> */}
     </div>
   );
 };

@@ -12,26 +12,13 @@ interface ProjectPageProps {
 }
 
 export default function ProjectDetails({ params }: ProjectPageProps) {
-  console.log('Received params:', params);
-
   const projectId = Number(params.projectid);
-  console.log('Project id numberfied:', projectId);
-
-  // Read JSON from public/projects.json
   const filePath = path.join(process.cwd(), 'public/projects.JSON');
-  console.log('Reading JSON file from:', filePath);
-
   const jsonData = fs.readFileSync(filePath, 'utf-8');
-  console.log('Raw JSON data:', jsonData);
-
   const projects: Project[] = JSON.parse(jsonData);
-  console.log('Parsed projects array:', projects);
-
   const project = projects.find((p) => p.id === projectId);
-  console.log('Selected project:', project);
 
   if (!project) {
-    console.log('Project not found for id:', projectId);
     return <div>Project not found</div>;
   }
 
@@ -76,9 +63,7 @@ export default function ProjectDetails({ params }: ProjectPageProps) {
             </span>
           ))}
         </div>
-        <span>
-          {' '}
-          {/* Git link */}
+        <div className='flex gap-2'>
           {project.gitlink != null && (
             <a
               href={project.gitlink}
@@ -90,19 +75,18 @@ export default function ProjectDetails({ params }: ProjectPageProps) {
               <FaGithub className='w-12 h-12' />
             </a>
           )}
-          {/* DL link */}
           {project.dllink != null && (
             <a
               href={project.dllink}
               target='_blank'
               rel='noopener noreferrer'
-              aria-label='Download Lin'
+              aria-label='Download link'
               className='p-2 inline-flex hover:scale-110 transition'
             >
               <FaDownload className='w-12 h-12' />
             </a>
-          )}{' '}
-        </span>
+          )}
+        </div>
 
         <hr className='border-t border-gray-300 shadow-lg my-6 w-full' />
         {project.content.map((block, index) => {
@@ -127,6 +111,8 @@ export default function ProjectDetails({ params }: ProjectPageProps) {
               </div>
             );
           }
+
+          return null;
         })}
       </div>
     </div>

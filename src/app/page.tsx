@@ -148,7 +148,7 @@ export default function HeroSection() {
 
               <Link
                 href='https://github.com/Murtaza1Mustafa'
-                className='group flex flex-col items-center gap-1 hover:'
+                className='group flex flex-col items-center gap-1'
               >
                 <FaGithub className='w-6 h-6 text-white group-hover:text-[#ade8f4] transition-all duration-200' />
                 <span className='text-[10px] text-[#ade8f4]'>GitHub</span>

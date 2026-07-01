@@ -1,17 +1,29 @@
+'use client';
+import { useEffect, useState } from 'react';
+
 const Bubbles = () => {
-  const size = Math.random() * 20 + 10; // 10px - 40px
-  const left = Math.random() * 100; // % across screen
-  const delay = Math.random() * 10; // stagger animation
+  const [mounted, setMounted] = useState(false);
+  const [style] = useState(() => ({
+    size: Math.random() * 20 + 10,
+    left: Math.random() * 100,
+    delay: Math.random() * 10,
+  }));
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
 
   return (
     <div
       className='absolute bottom rounded-full bg-gradient-to-br from-[#48cae4] to-[#90e0ef] opacity-75 blur-[1px] animate-bubble'
       style={{
-        width: size,
-        height: size,
-        left: `${left}%`,
+        width: style.size,
+        height: style.size,
+        left: `${style.left}%`,
         bottom: 0,
-        animationDelay: `${delay}s`,
+        animationDelay: `${style.delay}s`,
       }}
     />
   );

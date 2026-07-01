@@ -116,18 +116,6 @@ export default function Projects() {
                 ))}
               </p>
 
-              {/* Git / Project Link */}
-              {/* {project.gitlink && (
-                  <a
-                    href={project.gitlink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white underline font-semibold  hover:text-[#023e8a] transition-colors duration-300 mb-4 block px-2 md:px-6"
-                  >
-                    View Project
-                  </a>
-                )} */}
-
               {/* Thumbnail */}
               {project.thumbimage && (
                 <div className='w-full max-w-2xl mx-auto overflow-hidden rounded-xl  shadow-lg m-1'>
